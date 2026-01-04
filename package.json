@@ -1,6 +1,6 @@
 {
   "name": "@open-core/database",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "commonjs",
   "description": "Database library for the Open Core framework with PostgreSQL and MySQL drivers.",
   "main": "dist/index.js",
