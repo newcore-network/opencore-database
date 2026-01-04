@@ -1,0 +1,45 @@
+{
+  "name": "@open-core/database",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "description": "Database library for the Open Core framework with PostgreSQL and MySQL drivers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "open-core",
+    "database",
+    "sql",
+    "postgres",
+    "postgresql",
+    "mysql",
+    "node",
+    "typescript"
+  ],
+  "author": "OpenCore Team",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "repository": {
+    "url": "https://github.com/newcore-network/opencore-database"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@open-core/framework": "^0.2.4",
+    "mysql2": "^3.16.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/pg": "^8.16.0",
+    "typescript": "^5.9.3"
+  }
+}
