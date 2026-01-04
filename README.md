@@ -41,12 +41,12 @@ Example:
 
 ```ts
 import { registerPostgresAdapter, registerMysql2Adapter } from '@open-core/database'
-import { initDatabase, query } from '@open-core/framework/server'
+import { Server } from '@open-core/framework'
 
 registerPostgresAdapter() // or registerMysql2Adapter()
-initDatabase()
-
-const rows = await query('SELECT 1 as ok')
+Server.initDatabase()
+// we highly recommend using the databaseService by injection
+const rows = await Server.query('SELECT 1 as ok')
 ```
 
 ## Configuration
