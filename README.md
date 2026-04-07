@@ -1,4 +1,11 @@
-# @open-core/database
+> [!WARNING]
+> **Deprecated Repository**
+>
+> This project is no longer maintained and will not receive updates or support.
+>
+> We recommend implementing your own database solution using tools like:
+> - [TypeORM](https://typeorm.io/)
+> - [Prisma](https://www.prisma.io/)
 
 Database adapter package for **OpenCore**. It provides `DatabaseContract` implementations and registration helpers so you can access databases through the framework’s standard API (`query`, `single`, `scalar`, `execute`, `insert`, `transaction`).
 
